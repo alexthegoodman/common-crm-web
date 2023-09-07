@@ -24,6 +24,6 @@ export async function GET(request: Request) {
 
   //   return NextResponse.json({ tokens });
   return NextResponse.redirect(
-    `${process.env.WEBAPP_URL}/?accessToken=${tokens.access_token}`
+    `sunshot-app://sign-in?accessToken=${tokens.access_token}`
   );
 }
